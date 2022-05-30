@@ -9,42 +9,15 @@ body {
 
 /*topnav*/
 .topnav {
-align-items: center;
+  display: flex;
+  align-items: center !important;
+  justify-content: right;
   position: sticky;
   top: 0;
   background-color: white;
-  overflow: hidden;
   height: 60px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
-
-  /* display: flex;
-  flex-direction: row-reverse; */
 }
-
-.topnav a {
-float: right;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: "Outfit";
-  font-weight: Medium; 
-
-  
-}
-
-.topnav a:hover {
-    text-decoration-line: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-color:  #d3d800;
-
-}
-/* .topnav a.active {
-  background-color: #04aa6d;
-  color: white;
-} */
 
 .topnav .icon {
   display: none;
@@ -52,10 +25,77 @@ float: right;
 
 .topnav-img {
   width: 160px;
-  position: absolute;
+
   align-items: center;
   text-align: center;
+  position: absolute;
   left: 140px;
+  top: 20px;
+}
+
+.dropbtn {
+  background-color: transparent;
+  padding-right: 15px;
+  font-size: 18px;
+  font-family: "Outfit";
+  font-weight: Medium;
+  border: none;
+  cursor: pointer;
+  height: 60px;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: transparent;
+
+  height: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+
+  text-decoration: none;
+  display: block;
+  padding-bottom: 10px;
+  float: right;
+  text-align: center;
+  align-items: center;
+  padding-right: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Outfit";
+  font-weight: bold;
+}
+
+.dropdown-content a:hover {
+  color: red;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropbtn:hover {
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #d3d800;
+  text-underline-position: under;
+}
+
+#button-contact{
+    background-color: #3E461B;
+    height: 20px;
+    color: white;
 }
 
 /* responsiveness
@@ -93,12 +133,12 @@ float: right;
 }
 
 .header-title {
-  padding-top: 16%;
+  padding-top: 14%;
   padding-left: 120px;
   color: white;
   font-family: "outfit";
   font-weight: bold;
-  font-size: 180px;
+  font-size: 160px;
   line-height: 1em;
 }
 
