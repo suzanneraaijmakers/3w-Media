@@ -92,10 +92,18 @@ body {
   text-underline-position: under;
 }
 
-#button-contact{
-    background-color: #3E461B;
-    height: 20px;
-    color: white;
+#button-contact {
+  background-color: #3e461b;
+  height: 35px;
+  width: 120px;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  font-weight: bold;
+}
+
+#button-contact:hover {
+  background-color: #d3d800;
+  color: #3e461b;
 }
 
 /* responsiveness
@@ -156,4 +164,36 @@ b {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.call-to-action {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  float: right;
+  right: 140px;
+  position: fixed;
+  bottom: 0;
+}
+
+.call-to-action-style {
+  width: 200px;
+  height: 50px;
+  background-color: #3e461b;
+  border-radius: 0 15px 15px 0;
+  color: white;
+
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  opacity: 100%;
+  font-family: "Outfit";
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.call-to-action-style:hover {
+  background-color: white;
+  color: #3e461b;
 }
