@@ -7,6 +7,11 @@ body {
   margin-right: 120px;
 }
 
+.margin2 {
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
 /*topnav*/
 .topnav {
   display: flex;
@@ -17,6 +22,7 @@ body {
   background-color: white;
   height: 60px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  z-index: 5;
 }
 
 .topnav .icon {
@@ -136,12 +142,20 @@ body {
 /*header */
 .header {
   background: #d3d800;
-  height: 95vh;
+  height: 93vh;
   width: 100%;
 }
 
+.header-subtitle {
+  font-family: "outfit";
+  font-weight: semibold;
+  margin-left: 140px;
+  padding-top: 15px;
+  font-size: 18px;
+}
+
 .header-title {
-  padding-top: 14%;
+  padding-top: 13%;
   padding-left: 120px;
   color: white;
   font-family: "outfit";
@@ -157,7 +171,7 @@ b {
 .header-img {
   position: absolute;
   width: 150px;
-  top: 87%;
+  top: 86%;
 }
 
 .center {
@@ -171,9 +185,11 @@ b {
   justify-content: flex-end;
   flex-direction: column;
   float: right;
-  right: 140px;
+  right: 40px;
   position: fixed;
   bottom: 0;
+  margin-bottom: 10px;
+  z-index: 5;
 }
 
 .call-to-action-style {
@@ -188,7 +204,7 @@ b {
   margin-bottom: 10px;
   opacity: 100%;
   font-family: "Outfit";
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
@@ -196,4 +212,169 @@ b {
 .call-to-action-style:hover {
   background-color: white;
   color: #3e461b;
+}
+
+.body-title {
+  font-family: "Outfit";
+  font-weight: bold;
+  font-size: 80px;
+  padding-top: 20px;
+}
+p.body {
+  font-family: "Poppins";
+  font-weight: Regular;
+  font-size: 16px;
+}
+
+.right {
+  width: 450px;
+  position: absolute;
+  right: 250px;
+  top: 105vh;
+}
+
+u.important {
+  color: #d3d800;
+  font-weight: Bold;
+}
+
+
+
+/*blocks*/
+
+.block {
+  background-color: #d3d800;
+  width: 280px;
+  height: 320px;
+  border-radius: 4px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+
+.block:hover {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.block-title {
+  font-family: "Outfit";
+  font-weight: bold;
+  font-size: 24px;
+
+}
+
+.block-subtitle{
+  font-family: "Poppins";
+  font-weight: Regular;
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+.block-icon{
+  border-radius: 50%;
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.block-vid{
+  width: 60px;
+}
+
+
+.block-button{
+  align-items: center;
+  background-color: white;
+  border: none;
+  border-radius: 0px 8px 8px 0px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  width: 100px;
+  height: 30px;
+  font-family: "Outfit";
+  font-weight: Bold;
+  margin-top: 10px;
+  margin-left: 200px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+p{
+  position: absolutes;
+}
+
+
+
+
+
+.blocks-diensten {
+
+  margin-top: 350px;
+  display: flex;
+  position: inherit;
+  flex-wrap: wrap;
+
+}
+
+
+.box {
+ 
+
+  transform: translateX(-200%);
+  transition: transform 0.8s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(200%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+
+
+
+.box2 {
+  margin-left: 20px;
+  display: flex;
+
+  transform: translateX(400%);
+  transition: transform 0.8s ease;
+}
+
+.box2:nth-of-type(even) {
+  transform: translateX(200%);
+}
+
+.box2.show {
+  transform: translateX(0);
+}
+
+#last-block{
+  margin-left: 20px;
+}
+
+
+/*buttons*/
+
+.button-style{
+  background-color: #3E461B;
+  border-radius: 0px 15px 15px 0px;
+  border: none;
+  width: 250px;
+  height: 45px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#button-diensten{
+  float: right;
 }

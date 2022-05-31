@@ -10,38 +10,37 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <title>Proof of Concept 3w Media</title>
   </head>
   <body>
- 
-      
     <div class="topnav" id="myTopnav">
       <div class="margin">
         <img class="topnav-img" src="assets/3wMedia-01.png" alt="" srcset="" />
 
-          <div class="dropdown">
-            <button class="dropbtn">Diensten</button>
-            <div class="dropdown-content">
+        <div class="dropdown">
+          <button class="dropbtn">Diensten</button>
+          <div class="dropdown-content">
             <a href="#">Development en API koppelingen</a>
             <a href="#">Strategie en concept</a>
             <a href="#">Marketing en SEO</a>
             <a href="#">Voor wie doen wij dit?</a>
-            </div>
           </div>
-          <button class="dropbtn">Aanpak</button>
-          <div class="dropdown">
-            <button class="dropbtn">Portfolio</button>
-            <div class="dropdown-content">
+        </div>
+        <button class="dropbtn">Aanpak</button>
+        <div class="dropdown">
+          <button class="dropbtn">Portfolio</button>
+          <div class="dropdown-content">
             <a href="#">Link 1</a>
             <a href="#">Link 2</a>
             <a href="#">Link 3</a>
-            </div>
           </div>
-          <button class="dropbtn">Over ons</button>
-          <button class="dropbtn">Blog</button>
-          <button class="dropbtn">Support</button>
-          <button class="dropbtn">Vacatures</button>
-          <button id="button-contact" class="dropbtn">Contact</button>
+        </div>
+        <button class="dropbtn">Over ons</button>
+        <button class="dropbtn">Blog</button>
+        <button class="dropbtn">Support</button>
+        <button class="dropbtn">Vacatures</button>
+        <button id="button-contact" class="dropbtn">Contact</button>
 
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
@@ -50,6 +49,7 @@
     </div>
 
     <div class="header">
+      <div class="header-subtitle">Creatief en strategisch mediabureau</div>
       <div class="header-title">
         3w Media <b>maakt</b> <br />
         jouw
@@ -67,26 +67,85 @@
       </div>
 
       <div class="call-to-action">
-          <button id="call-to-action-mail" class="call-to-action-style">info@3wmedia.nl</button>
-          <button id="call-to-action-phone" class="call-to-action-style">+31(0)883963342</button>
+        <button id="call-to-action-mail" class="call-to-action-style">
+          <i
+            class="fa fa-envelope"
+            aria-hidden="true"
+            style="padding-right: 10px"
+          ></i>
+          info@3wmedia.nl
+        </button>
+        <button id="call-to-action-phone" class="call-to-action-style">
+          <i
+            class="fa fa-phone"
+            aria-hidden="true"
+            style="padding-right: 10px"
+          ></i
+          >+31(0)883963342
+        </button>
       </div>
     </div>
 
+    <div class="margin2">
+      <div class="right">
+        <div class="body-title">Diensten</div>
+        <p class="body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius
+          quod natus, voluptatem distinctio eligendi esse, corrupti magnam
+          placeat amet sequi at laudantium similique. Ad quis tempora est quasi
+          nobis!
+          <br /><u class="important">Voor wie?</u>
+        </p>
+      </div>
 
+      <div class="blocks-diensten">
+        <div class="box">
+          <div class="block">
+            <div class="block-icon">
+              <img src="assets/animation.svg" alt="" />
+            </div>
+            <div class="block-title">Maatwerk development</div>
+            <div class="block-subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius
+              quod natus, voluptatem distinctio eligendi esse.
+            </div>
+            <div class="block-button">Lees meer</div>
+          </div>
+        </div>
 
+        <div class="box2">
+          <div class="block">
+            <div class="block-icon">
+              <img src="assets/animation.svg" alt="" />
+            </div>
+            <div class="block-title">API koppelingen</div>
+            <div class="block-subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius
+              quod natus, voluptatem distinctio eligendi esse.
+            </div>
+            <div class="block-button">Lees meer</div>
+          </div>
 
+          <div id="last-block" class="block">
+            <div class="block-icon">
+              <img src="assets/animation.svg" alt="" />
+            </div>
+            <div class="block-title">Webdesign</div>
+            <div class="block-subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius
+              quod natus, voluptatem distinctio eligendi esse.
+            </div>
+            <div class="block-button">Lees meer</div>
+          </div>
+        </div>
+      </div>
+     
+        <button id ="button-diensten" class ="button-style" class="block-button">Lees meer</button>
+      
 
-    <div>section 1</div>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eius quod
-      natus, voluptatem distinctio eligendi esse, corrupti magnam placeat amet
-      sequi at laudantium similique. Ad quis tempora est quasi nobis!
-    </p>
+      
 
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fugit
-      velit vero, mollitia excepturi saepe quam doloribus architecto accusamus
-      esse beatae! Porro blanditiis sunt possimus dolorem optio quo animi natus.
+      <br /><br /><br />
     </div>
   </body>
 </html>
