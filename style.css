@@ -238,8 +238,6 @@ u.important {
   font-weight: Bold;
 }
 
-
-
 /*blocks*/
 
 .block {
@@ -252,9 +250,7 @@ u.important {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
 }
-
 
 .block:hover {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
@@ -264,17 +260,16 @@ u.important {
   font-family: "Outfit";
   font-weight: bold;
   font-size: 24px;
-
 }
 
-.block-subtitle{
+.block-subtitle {
   font-family: "Poppins";
   font-weight: Regular;
   font-size: 14px;
   padding-top: 5px;
 }
 
-.block-icon{
+.block-icon {
   border-radius: 50%;
   background-color: white;
   height: 100px;
@@ -284,12 +279,11 @@ u.important {
   justify-content: center;
 }
 
-.block-vid{
+.block-vid {
   width: 60px;
 }
 
-
-.block-button{
+.block-button {
   align-items: center;
   background-color: white;
   border: none;
@@ -307,27 +301,18 @@ u.important {
   margin-bottom: 20px;
   font-size: 14px;
 }
-p{
+p {
   position: absolutes;
 }
 
-
-
-
-
 .blocks-diensten {
-
   margin-top: 350px;
   display: flex;
   position: inherit;
   flex-wrap: wrap;
-
 }
 
-
 .box {
- 
-
   transform: translateX(-200%);
   transition: transform 0.8s ease;
 }
@@ -339,9 +324,6 @@ p{
 .box.show {
   transform: translateX(0);
 }
-
-
-
 
 .box2 {
   margin-left: 20px;
@@ -359,22 +341,84 @@ p{
   transform: translateX(0);
 }
 
-#last-block{
+#last-block {
   margin-left: 20px;
 }
 
-
 /*buttons*/
 
-.button-style{
-  background-color: #3E461B;
+.button-style {
+  background-color: #3e461b;
   border-radius: 0px 15px 15px 0px;
   border: none;
   width: 250px;
   height: 45px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  color: white;
+  font-family: "Outfit";
+  font-weight: 400;
+  font-size: 18px;
 }
 
-#button-diensten{
+.button-style:hover {
+  background-color: #d3d800;
+  color: #3e461b;
+  font-weight: 600;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+#button-diensten {
   float: right;
 }
+#button-diensten-margin {
+  margin-bottom: 160px !important;
+}
+
+/* PARALLAX EFFECT */
+.parallax {
+  background-image: url("assets/office-overlay.jpg");
+
+  min-height: 400px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-parallax {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+
+
+
+}
+.glass-item {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+  align-items: center;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+
+  background: transparent linear-gradient(148deg, #ffffff65 0%, #4b4a4a33 100%)
+    0% 0% no-repeat padding-box;
+  box-shadow: 15px 15px 5px #0000000d;
+  border: 1px solid #ffffff19;
+
+  backdrop-filter: blur(2px);
+}
+
+#glass-item-margin{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+
+
