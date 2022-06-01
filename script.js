@@ -71,14 +71,19 @@ window.onload = function () {
 };
 
 /*code effect diensten blokken KUNNEN UITLEGGEN */
-const boxes = document.querySelectorAll(".box");
 
-window.addEventListener("scroll", checkBoxes);
+checkBoxes(".box");
+checkBoxes(".box2");
+checkBoxes(".box3");
 
-checkBoxes();
+function checkBoxes(effect) {
+  const boxes = document.querySelectorAll(effect);
 
-function checkBoxes() {
-  const triggerBottom = (window.innerHeight / 5) * 4;
+  window.addEventListener("scroll", () => test(boxes)); //meestal direct een event - nu geef je boxes mee
+} //telkens als je scrolt wordt de functie test uitgevoerd
+
+function test(boxes) {
+  const triggerBottom = (window.innerHeight / 5) * 4; //hoogte pagina vergelijken met de bovenkant van de boxes
 
   boxes.forEach((box) => {
     const boxTop = box.getBoundingClientRect().top;
@@ -90,24 +95,3 @@ function checkBoxes() {
     }
   });
 }
-
-const boxes2 = document.querySelectorAll(".box2");
-
-window.addEventListener("scroll", checkBoxes2);
-checkBoxes2();
-
-function checkBoxes2() {
-  const triggerBottom = (window.innerHeight / 5) * 4;
-
-  boxes2.forEach((box) => {
-    const boxTop = box.getBoundingClientRect().top;
-
-    if (boxTop < triggerBottom) {
-      box.classList.add("show");
-    } else {
-      box.classList.remove("show");
-    }
-  });
-}
-
-

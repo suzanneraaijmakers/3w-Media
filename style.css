@@ -312,6 +312,11 @@ p {
   flex-wrap: wrap;
 }
 
+
+
+
+
+
 .box {
   transform: translateX(-200%);
   transition: transform 0.8s ease;
@@ -327,8 +332,6 @@ p {
 
 .box2 {
   margin-left: 20px;
-  display: flex;
-
   transform: translateX(400%);
   transition: transform 0.8s ease;
 }
@@ -341,9 +344,26 @@ p {
   transform: translateX(0);
 }
 
-#last-block {
+.box3 {
   margin-left: 20px;
+
+  transform: translateY(100%);
+  transition: transform 0.8s ease;
 }
+
+.box3:nth-of-type(even) {
+  transform: translateY(20%);
+}
+
+.box3.show {
+  transform: translateY(0);
+}
+
+
+
+
+
+
 
 /*buttons*/
 
@@ -392,9 +412,6 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-
-
-
 }
 .glass-item {
   display: flex;
@@ -414,11 +431,7 @@ p {
   backdrop-filter: blur(2px);
 }
 
-#glass-item-margin{
+#glass-item-margin {
   margin-left: 15px;
   margin-right: 15px;
 }
-
-
-
-
