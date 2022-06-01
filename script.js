@@ -95,3 +95,19 @@ function test(boxes) {
     }
   });
 }
+
+
+
+//effect tonen png vs gifje
+var icon = document.getElementById('icon-api'),
+    gif = document.getElementById('gif');
+
+icon.addEventListener('mouseover', function(){
+    gif.style.display = "block";
+}, true);
+icon.addEventListener('mouseout', function(){
+    gif.style.display = "none";
+}, true);
+
+
+
