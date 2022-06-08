@@ -12,7 +12,7 @@ body {
   margin-right: 250px;
 }
 
-/*topnav*/
+/* styling topnav*/
 .topnav {
   display: flex;
   align-items: center !important;
@@ -87,6 +87,8 @@ body {
   margin-left: 1000px !important;
 }
 
+/* styling animatie in button */
+
 .dropdown-content a span {
   display: inline-block;
   position: relative;
@@ -138,7 +140,7 @@ body {
   color: #3e461b;
 }
 
-/*header */
+/* styling header */
 .header {
   background: #d3d800;
   height: 93vh;
@@ -179,6 +181,8 @@ b {
   align-items: center;
 }
 
+
+/* styline call-to-action buttons */
 .call-to-action {
   display: flex;
   justify-content: flex-end;
@@ -213,6 +217,7 @@ b {
   color: #3e461b;
 }
 
+/* styling tekstblok */
 .body-title {
   font-family: "Outfit";
   font-weight: bold;
@@ -237,8 +242,7 @@ u.important {
   font-weight: Bold;
 }
 
-/*blocks*/
-
+/* styling blokken */
 .block {
   background-color: #d3d800;
   width: 280px;
@@ -303,7 +307,7 @@ u.important {
   width: 60px;
 }
 
-/*Button styling */
+/* styling buttons in blokken */
 .block-button {
   align-items: center;
   background-color: white;
@@ -368,6 +372,7 @@ p {
   flex-wrap: wrap;
 }
 
+/* styling animatie effect blokken - per class aparte styling (voor het gemak) */
 .box {
   transform: translateX(-200%);
   transition: transform 0.8s ease;
@@ -436,8 +441,7 @@ p {
   transform: translateY(0);
 }
 
-/*buttons*/
-
+/* styling algemene buttons*/
 .button-style {
   background-color: #3e461b;
   border-radius: 0px 15px 15px 0px;
@@ -466,18 +470,15 @@ p {
   margin-bottom: 160px !important;
 }
 
-/* PARALLAX EFFECT */
+/* styling parallax effect met glassmorphism effect */
 .parallax {
-  background-image: url("assets/office-overlay.jpg");
-
+  background-image: url("assets/office-overlay.jpg");  /* voorbeeld van een afbeelding die hier kan worden geplaatst */
   min-height: 400px;
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .content-parallax {
   display: flex;
   justify-content: center;
@@ -495,15 +496,11 @@ p {
   height: 150px;
   width: 150px;
   align-items: center;
-
-  background: transparent linear-gradient(148deg, #ffffff65 0%, #4b4a4a33 100%)
-    0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(148deg, #ffffff65 0%, #4b4a4a33 100%) 0% 0% no-repeat padding-box;
   box-shadow: 15px 15px 5px #0000000d;
   border: 1px solid #ffffff19;
-
   backdrop-filter: blur(2px);
 }
-
 #glass-item-margin {
   margin-left: 60px;
   margin-right: 60px;
@@ -523,6 +520,7 @@ p {
   position: absolute;
 }
 
+/* styling portfolio items */
 .portfolio {
   background-color: #d3d800;
   height: 800px;
@@ -577,9 +575,10 @@ p {
 #button-portfolio .button-style:hover {
   background-color: white !important;
 }
-/* scrollbar */
+
+/* styling portfolio slider (scrollbar) */
 .scroll-container {
-  overflow: scroll; /* Show scrollbars */
+  overflow: scroll;
   white-space: nowrap;
   background: transparent;
   height: 100%;
@@ -594,7 +593,7 @@ p {
   margin-right: 22px;
 }
 
-/* Over ons blokken */
+/* styling blokken 'over ons' */
 #block-over-ons {
   width: 220px !important;
   height: 260px !important;

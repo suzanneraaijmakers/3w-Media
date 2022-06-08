@@ -1,16 +1,4 @@
-/*topnav*/
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
-/*animatie title header*/
-
+/* script animatie in header - via volgende link: https://codepen.io/gschier/embed/DLmXKJ?default-tab=js%2Cresult&theme-id=0  */
 var TxtRotate = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -32,7 +20,6 @@ TxtRotate.prototype.tick = function () {
   }
 
   this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
-
   var that = this;
   var delta = 300 - Math.random() * 100;
 
@@ -48,7 +35,6 @@ TxtRotate.prototype.tick = function () {
     this.loopNum++;
     delta = 500;
   }
-
   setTimeout(function () {
     that.tick();
   }, delta);
@@ -63,15 +49,15 @@ window.onload = function () {
       new TxtRotate(elements[i], JSON.parse(toRotate), period);
     }
   }
-  // INJECT CSS
   var css = document.createElement("style");
   css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap {  }"; //border-right: 0.08em solid white tussen {}
+  css.innerHTML = ".txt-rotate > .wrap {  }"; 
   document.body.appendChild(css);
 };
 
-/*code effect diensten blokken KUNNEN UITLEGGEN */
 
+
+/* script effect van blokken  */
 checkBoxes(".box");
 checkBoxes(".box2");
 checkBoxes(".box3");
@@ -79,17 +65,13 @@ checkBoxes(".box4");
 checkBoxes(".box5");
 
 function checkBoxes(effect) {
-  const boxes = document.querySelectorAll(effect);
-
-  window.addEventListener("scroll", () => test(boxes)); //meestal direct een event - nu geef je boxes mee
-} //telkens als je scrolt wordt de functie test uitgevoerd
-
+  const boxes = document.querySelectorAll(effect); //aanroepen van alle classes
+  window.addEventListener("scroll", () => test(boxes)); //telkens als je scrollt, wordt de functie test uitgevoerd
+}
 function test(boxes) {
-  const triggerBottom = (window.innerHeight / 5) * 4; //hoogte pagina vergelijken met de bovenkant van de boxes
-
+  const triggerBottom = (window.innerHeight / 5) * 4; //hoogte van de pagina vergelijken met de bovenkant van de boxes
   boxes.forEach((box) => {
-    const boxTop = box.getBoundingClientRect().top;
-
+    const boxTop = box.getBoundingClientRect().top; //als de pagina de top van de boxes heeft bereikt, deze tonen (of weghalen indien er wordt terug gescrold)
     if (boxTop < triggerBottom) {
       box.classList.add("show");
     } else {
@@ -99,13 +81,12 @@ function test(boxes) {
 }
 
 
-
-//effect tonen png vs gifje
-var icon = document.getElementById('icon-api'),
-    gif = document.getElementById('gif');
+// script interactieve animatie bij 'mouseover'
+var   icon = document.getElementById('icon-api'),
+      gif = document.getElementById('gif');
 
 icon.addEventListener('mouseover', function(){
-    gif.style.display = "block";
+gif.style.display = "block";
 }, true);
 icon.addEventListener('mouseout', function(){
     gif.style.display = "none";
