@@ -76,6 +76,7 @@ checkBoxes(".box");
 checkBoxes(".box2");
 checkBoxes(".box3");
 checkBoxes(".box4");
+checkBoxes(".box5");
 
 function checkBoxes(effect) {
   const boxes = document.querySelectorAll(effect);

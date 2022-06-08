@@ -411,16 +411,29 @@ p {
 }
 
 .box4 {
-  transform: translateX(400%);
+  transform: translateY(10%);
   transition: transform 0.8s ease;
 }
 
 .box4:nth-of-type(even) {
-  transform: translateX(200%);
+  transform: translateY(-50%);
 }
 
 .box4.show {
   transform: translateX(0);
+}
+
+.box5 {
+  transform: translateY(50%);
+  transition: transform 0.8s ease;
+}
+
+.box5:nth-of-type(even) {
+  transform: translateY(10%);
+}
+
+.box5.show {
+  transform: translateY(0);
 }
 
 /*buttons*/
